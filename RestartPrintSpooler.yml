@@ -1,0 +1,17 @@
+# Start the service if it is stopped
+- name: Start Service
+  hosts: windows
+  gather_facts: no
+  tasks:
+    - win_service:
+        name: spooler
+        state: started
+  When: win_service == Stopped
+#Restart the service  
+- name: restart service
+  hosts: windows
+  gather_facts: no
+  tasks:
+    - win_service:
+        name: spooler
+        state: restarted
