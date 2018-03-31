@@ -6,7 +6,7 @@
     - win_service:
         name: spooler
         state: started
-      when: state: stopped
+      when: state == stopped
 #Restart the service  
 - name: restart service
   hosts: "{{ printservername }}"
