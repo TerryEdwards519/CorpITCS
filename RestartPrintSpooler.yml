@@ -1,12 +1,3 @@
-# Start the service if it is stopped
-#- name: Start Service
-#  hosts: "{{ printservername }}"
-#  gather_facts: no
-#  tasks:
-#    - win_service:
-#        name: spooler
-#        state: started
-#      when: state == "stopped"
 #Restart the service  
 - name: restart service
   hosts: "{{ printservername }}"
