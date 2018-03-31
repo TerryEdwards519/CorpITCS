@@ -1,6 +1,6 @@
 # Start the service if it is stopped
 - name: Start Service
-  hosts: windows
+  hosts: {{ printservername }}
   gather_facts: no
   tasks:
     - win_service:
@@ -9,7 +9,7 @@
   When: win_service == Stopped
 #Restart the service  
 - name: restart service
-  hosts: windows
+  hosts: {{ printservername }}
   gather_facts: no
   tasks:
     - win_service:
