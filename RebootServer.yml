@@ -1,0 +1,6 @@
+#Reboots a server from a list of servers 
+- name: reboot server
+  hosts: "{{ servername }}"
+  gather_facts: no
+  tasks:
+    - win_reboot:
