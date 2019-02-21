@@ -2,5 +2,5 @@
 ansible_ssh_port: 5986
 ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
-ansible_winrm_realm: ATSNA.ATSAUTO.NET
+ansible_winrm_realm: DOMAIN.COM
 validate_certs: false

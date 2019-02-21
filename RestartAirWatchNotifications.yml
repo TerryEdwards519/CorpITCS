@@ -1,4 +1,4 @@
-#Restart the AirWatch Email Notification service  
+#Restart the AirWatch Email Notification service
 - name: Restart AirWatch Email Notification service
   hosts: "CA01A2914"
   gather_facts: no

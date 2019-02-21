@@ -1,4 +1,4 @@
-#Restart the service  
+#Restart the service
 - name: restart service
   hosts: "{{ printservername }}"
   gather_facts: no
