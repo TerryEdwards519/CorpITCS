@@ -1,6 +1,6 @@
 #Reboots a server from a list of servers
 - name: reboot server
-  hosts: "{{ servername }}"
+  hosts: terryedwards519-server1.eastus.cloudapp.azure.com
   gather_facts: no
   tasks:
     - win_reboot:
