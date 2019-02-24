@@ -1,8 +1,8 @@
 #Stop a service
 - name: Stops a service based on passed in service name from the template
-  hosts: "{{ servername }}"
+  hosts: terryedwards51-server1
   gather_facts: no
   tasks:
     - win_service:
-        name: "{{ servicename }}"
+        name: wuauserv
         state: stopped

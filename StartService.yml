@@ -1,8 +1,8 @@
 #Start a service
 - name: Starts a service based on passed in service name from the template
-  hosts: "{{ servername }}"
+  hosts: terryedwards519-server1
   gather_facts: no
   tasks:
     - win_service:
-        name: "{{ servicename }}"
+        name: wuauserv
         state: started

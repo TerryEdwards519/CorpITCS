@@ -1,6 +1,6 @@
 #Restart the service
 - name: restart service
-  hosts: "{{ printservername }}"
+  hosts: terryedwards51-server1
   gather_facts: no
   tasks:
     - win_service:
