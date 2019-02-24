@@ -1,6 +1,6 @@
 #Stop a service
 - name: Stops a service based on passed in service name from the template
-  hosts: terryedwards51-server1
+  hosts: terryedwards519-server1.eastus.cloudapp.azure.com
   gather_facts: no
   tasks:
     - win_service:
