@@ -1,5 +1,5 @@
 #Start a service
-- name: Starts a service based on passed in service name from the template
+- name: Starts a service based on the passed in service name from the template
   hosts: terryedwards519-server1.eastus.cloudapp.azure.com
   gather_facts: no
   tasks:
